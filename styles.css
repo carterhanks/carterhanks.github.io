@@ -14,7 +14,7 @@ html {
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/background.jpeg);
     background-size: cover;
     background-position: center;
-    overflow-x: hidden;
+    background-attachment: fixed;
 }
 
 .navbar {
@@ -29,6 +29,7 @@ html {
 }
 
 .logo {
+    padding-left: 5%;
     width: 250px;
     cursor: pointer;
 }
