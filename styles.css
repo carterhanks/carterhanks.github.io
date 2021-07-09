@@ -4,10 +4,6 @@
     font-family: "aglet slab";
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .banner {
     width: 100vw;
     height: 100vh;
@@ -15,7 +11,6 @@ html {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* height: 2000px; */
 }
 
 .navbar {
@@ -52,7 +47,7 @@ html {
     content: '';
     height: 3px;
     width: 0;
-    background: #2F5D62;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -117,4 +112,63 @@ button:hover span {
 
 button:hover {
     border: none;
+}
+
+.contact-title {
+    text-align: center;
+    height: 100vh;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+    background-color: #2F5D62;
+}
+
+.contact-title h1 {
+    padding: 3%;
+    font-size: 32px;
+    line-height: 10px;
+    color: white;
+}
+
+.contact-title h2 {
+    padding: 1%;
+    font-size: 16px;
+    color: white;
+}
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #A7C4BC;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    /* background: #ff5722; */
+    background-color: #A7C4BC;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    /* background-color: #f44336; */
+    background-color: #5E8B7E;
+    cursor: pointer;
 }

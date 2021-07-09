@@ -15,6 +15,7 @@
                 <li id="homeBtn"><a href="#">Home</a></li>
                 <li id="skillsBtn"><a href="#">Skills</a></li>
                 <li id="contactBtn"><a href="#">Contact Me</a></li>
+                <!-- <li id="contactBtn"><a href="mailto:EmailAddress@.XYZ.com">Contact Me</a></li> -->
                 <!-- <li><a href="#">Projects</a></li> -->
             </ul>
         </div>
@@ -27,8 +28,27 @@
                 <button type="button" id="hireMeBtn"><span></span>Hire Me</button>
             </div>
         </div>
+
         
     </div>
+    
+    <section class="contact-title">
+        <div>
+            <h1>Say Hello.</h1>
+            <h2>I'm excited to hear from you.</h2>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="contact-form-handler.php">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                    <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+            </form>
+        </div>
+    </section>
+
+
     <script src="index.js"></script>
 </body>
 </html>
