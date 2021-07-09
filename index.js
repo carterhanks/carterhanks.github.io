@@ -1,12 +1,14 @@
 // Contact Me Button Functionality
 
+const contactBtn = document.getElementById("contactBtn");
 
-const contactMeBtn = document.getElementById("contactBtn");
-
-contactMeBtn.onclick = function(e) {
+contactBtn.onclick = function(e) {
     e.preventDefault();
-    alert("Please email me at carterhanks@gmail.com");
+    const contactDiv = document.getElementById("contactDiv")
+    contactDiv.scrollIntoView({behavior: "smooth"});
+    alert("Under construction!\nPlease email me at carterhanks@gmail.com");
 };
+
 
 // Project Button Functionality
 
@@ -17,47 +19,41 @@ projectBtn.onclick = function(e) {
     window.open("https://to-doozies.herokuapp.com/");
 };
 
+
 // Home Button Functionality
 
 const homeBtn = document.getElementById("homeBtn");
+
+const scrollToTop = function() {
+    scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+};
 
 homeBtn.onclick = function (e) {
     e.preventDefault();
     scrollToTop();
 };
 
-const scrollToTop = () => {
-    console.log('scroll')
-    scrollTo({
-        top: 0,
-        behavior: "smooth",
-     });
-}
 
-const handleSkillsClick = (e) => {
-    e.preventDefault();
-    alert('skills clicked!');
-}
+// Skills Button Functionality
 
 const skillsButton = document.getElementById('skillsBtn');
+
+const handleSkillsClick = function(e) {
+    e.preventDefault();
+    alert('Skills under construction!');
+};
+
 skillsButton.addEventListener('click', handleSkillsClick);
 
-// const rootElement = document.documentElement;
-
-// function scrollToTop() {
-//     rootElement.scrollTo({
-//         top: 0,
-//         behavior: "smooth"
-//     });
-
-// };
-
-// scrollToTopBtn.addEventListener("click", scrollToTop);
 
 // Hire Me Button Functionality
 
 const hireMeBtn = document.getElementById("hireMeBtn");
 
-hireMeBtn.onclick = function() {
+hireMeBtn.onclick = function(e) {
+    e.preventDefault();
     window.open("https://calendly.com/carterhanks");
 };

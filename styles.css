@@ -76,6 +76,7 @@
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
+    font-size: 25px;
 }
 
 button {
@@ -116,28 +117,29 @@ button:hover {
 
 .contact-title {
     text-align: center;
-    height: 100vh;
+    height: 650px;
     text-transform: uppercase;
-    transition: all 4s ease-in-out;
+    transition: all 2.5s ease-in-out;
     background-color: #2F5D62;
 }
 
 .contact-title h1 {
-    padding: 3%;
-    font-size: 32px;
+    padding: 8%;
+    font-size: 60px;
     line-height: 10px;
     color: white;
+
 }
 
 .contact-title h2 {
     padding: 1%;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
 }
 
 form {
-    margin-top: 50px;
-    transition: all 4s ease-in-out;
+    margin-top: 5%;
+    transition: all 2.5s ease-in-out;
 }
 
 .form-control {
@@ -145,9 +147,9 @@ form {
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid #A7C4BC;
+    border-bottom: 2px solid #5E8B7E;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 16px;
 }
 
@@ -168,7 +170,6 @@ form .submit {
 }
 
 form .submit:hover {
-    /* background-color: #f44336; */
     background-color: #5E8B7E;
     cursor: pointer;
 }
