@@ -23,7 +23,6 @@ app.post('/', (req, res) => {
             pass: apiKey
         }
     });
-    console.log(apiKey);
 
     const mailOptions = {
         from: req.body.email,
