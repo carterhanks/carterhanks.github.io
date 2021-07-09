@@ -32,5 +32,5 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 const hireMeBtn = document.getElementById("hireMeBtn");
 
 hireMeBtn.onclick = function() {
-    window.open("https://koalendar.com/e/meet-with-carter");
+    window.open("https://calendly.com/carterhanks");
 }
