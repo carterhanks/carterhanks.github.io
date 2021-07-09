@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carter Hanks</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <title>Carter Hanks</title>
 </head>
 <body>
     <div class="banner">
@@ -37,18 +40,18 @@
             <h1>Say Hello.</h1>
             <h2>I'm excited to hear from you.</h2>
         </div>
-        <div class="contact-form">
-            <form id="contact-form" method="post" action="contact-form-handler.php">
-                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-                <br>
-                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
-                    <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
-                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+        <div class="form-container">
+            <form class="contact-form">
+                <input id="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                <input id="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                <input id="subject" type="test" class="form-control" placeholder="Subject" required><br>
+                <textarea id="message" class="form-control" placeholder="Message" cols="30" rows="5" required></textarea><br>
+                <input type="submit" class="form-control submit" value="SEND MESSAGE">
             </form>
         </div>
     </section>
 
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
