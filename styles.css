@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Zilla Slab', serif;
@@ -15,12 +15,15 @@
 
 .navbar {
     top: 0;
-    width: 80%;
+    width: 100vw;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
+    background-color: black;
+    opacity: .75;
 }
 
 .logo {
@@ -29,33 +32,48 @@
     cursor: pointer;
 }
 
-.navbar ul li {
-    left: 75%;
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+#menu-items {
+    width: 300px;
+    margin-right: 60px;
 }
 
-.navbar ul li a {
+#menu-items ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-items li {
+    list-style-type: none;
+}
+
+/* .navbar ul li { */
+    /* left: 75%; */
+    /* list-style: none; */
+    /* display: inline-block; */
+    /* margin: 0 20px; */
+    /* position: relative; */
+/* } */
+
+#menu-items li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
 
-.navbar ul li::after {
+#menu-items .nav-menu-item::after {
     content: '';
     height: 3px;
     width: 0;
     background: white;
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -10px; */
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after {
-    width: 100%;
+#menu-items .nav-menu-item:hover::after {
+    width: 10%;
 }
 
 .content {
@@ -115,7 +133,7 @@ button:hover {
     border: none;
 }
 
-.contact-title {
+#contact-section {
     text-align: center;
     height: 650px;
     text-transform: uppercase;
@@ -123,15 +141,14 @@ button:hover {
     background-color: #2F5D62;
 }
 
-.contact-title h1 {
-    padding: 5%;
+#contact-section h1 {
     font-size: 60px;
     line-height: 10px;
     color: white;
-
+    background: #2F5D62;
 }
 
-.contact-title h2 {
+#contact-section h2 {
     padding: 1%;
     font-size: 20px;
     color: white;
@@ -151,6 +168,7 @@ form {
     color: white;
     font-size: 20px;
     margin-bottom: 16px;
+    background-color: #2F5D62;
 }
 
 input {
@@ -158,10 +176,11 @@ input {
 }
 
 form .submit {
-    /* background: #ff5722; */
     background-color: #A7C4BC;
     border-color: transparent;
     color: white;
+    border: 1px solid black;
+    border-radius: 15px;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -170,6 +189,10 @@ form .submit {
 }
 
 form .submit:hover {
-    background-color: #5E8B7E;
+    background-color: #e5f8f3;
     cursor: pointer;
+}
+
+.contact-form {
+    background-color: #2F5D62;
 }

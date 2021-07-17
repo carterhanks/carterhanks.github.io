@@ -5,8 +5,8 @@ const contactBtn = document.getElementById("contactBtn");
 
 contactBtn.onclick = function(e) {
     e.preventDefault();
-    const contactDiv = document.getElementById("contactDiv")
-    contactDiv.scrollIntoView({behavior: "smooth"});
+    const contactTitle = document.getElementById("contact-title")
+    contactTitle.scrollIntoView({behavior: "smooth"});
     alert("Under construction!\nPlease email me at carterhanks@gmail.com");
 };
 
