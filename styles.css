@@ -90,6 +90,7 @@ body {
 .content h1 {
 	font-size: 70px;
 	margin-top: 80px;
+	margin-bottom: 1rem;
 }
 
 .content p {
@@ -144,6 +145,7 @@ button:hover {
 }
 
 #contact-section h1 {
+	padding-top: 1rem;
 	font-size: 60px;
 	line-height: 10px;
 	color: white;
